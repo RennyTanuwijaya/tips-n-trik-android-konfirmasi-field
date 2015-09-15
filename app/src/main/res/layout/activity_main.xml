@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/titleNewPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Compare Password"
+            android:textColor="#989898"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:padding="10dp"
+            android:textColorHint="#cccccc"
+            android:layout_marginBottom="10dp"/>
+        <!-- this must be textPasswprd but it make us cant see what we type :D -->
+
+        <EditText
+            android:id="@+id/etPasswordConfirm"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password Confirmation"
+            android:padding="10dp"
+            android:textColorHint="#cccccc"
+            android:layout_marginBottom="10dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="10dp"
+            android:text="P a s s w o r d     n o t    m a t c h"
+            android:textColor="#C90000"
+            android:visibility="invisible"
+            android:layout_gravity="right"
+            android:id="@+id/PasswordNotMatch" />
+
+
+        <Button
+            android:id="@+id/btnChangePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="#CCFFFF"
+            android:padding="10dp"
+            android:text="Change Password"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
